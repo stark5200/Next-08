@@ -9,7 +9,7 @@ export async function GET(request: Request) {
 
     const todo: Todo = await res.json()
 
-    if (!todo.id) return NextResponse.json({ "message": "Todo not found" })
+    if (!todo.id) return NextResponse.json({ "message": "Todo Not found" })
 
     return NextResponse.json(todo)
 }
